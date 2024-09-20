@@ -1,0 +1,40 @@
+---
+import ExperienceItem from "./ExperienceItem.astro"
+const EXPERIENCE = [
+{
+    date: "2024 - Finalizado",
+    title: "English for Developers & IT Profesionals",
+    company: "Desafio LATAM",
+    description:
+      "Curso diseñado para aquellos que se proyectan en el mundo del desarrollo y la tecnología de la información. Abarcando desde lo básico y esencial hasta habilidades comunicativas.",
+      link:"https://cursos.desafiolatam.com/certificates/caxygafilv"
+  },
+
+  {
+    date: "2024 - Finalizado",
+    title: "CSS Avanzado",
+    company: "Desafío LATAM",
+    description:
+      "Dirigido a desarrolladores web que buscan dominar CSS a un nivel experto. Utilizando animaciones, Media Queries para diseños responsivos y manejar con precisión Flexbox y Grid para layouts modernos.",
+    link: "https://cursos.desafiolatam.com/certificates/xystonmzlo",
+  },
+  {
+    date: "2023 - 2024 finalizado",
+    title: "Desarrollador Web Full Stack",
+    company: "Digital House",
+    description:
+      "Aprendí a manejar tanto el frontend como el backend, a crear interfaces interactivas, gestionar bases de datos, y conectar todos los componentes de una aplicación web. Desde HTML, CSS y JavaScript hasta Node.js y bases de datos, adquiriendo las habilidades necesarias para construir proyectos web de principio a fin.",
+      link: "../../public/digital-house.pdf"
+  },
+]
+---
+
+<ol class="relative mt-16">
+  {
+    EXPERIENCE.map((experience) => (
+      <li class="">
+        <ExperienceItem {...experience} />
+      </li>
+    ))
+  }
+</ol>
